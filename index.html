@@ -1,0 +1,25 @@
+<!doctype html>
+<script src="js/silly.js"></script>
+<script src="js/zepto.js"></script>
+<html>
+<head>
+<title>Silly Simple</title>
+</head>
+<body>
+<button id="silly">Do it</button>
+<button id="clear">Clear</button>
+<div id="results"></div>
+
+
+<script>
+$('#silly').click(function() {
+	SILLY.DoIt($('#results'));
+
+});
+$('#clear').click(function() {
+	$('#results').html('');
+
+});
+</script>
+</body>
+</html>
